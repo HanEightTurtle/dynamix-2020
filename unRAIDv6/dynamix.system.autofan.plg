@@ -5,7 +5,7 @@
 <!ENTITY author    "Bergware/gfjardim">
 <!ENTITY version   "2020.06.21">
 <!ENTITY launch    "Settings/FanSettings">
-<!ENTITY pluginURL "https://raw.githubusercontent.com/bergware/dynamix/master/unRAIDv6/&name;.plg">
+<!ENTITY pluginURL "https://github.com/HanEightTurtle/dynamix-2020/blob/main/unRAIDv6/&name;.plg">
 <!ENTITY source    "/boot/config/plugins/&name;/&name;">
 <!ENTITY MD5       "0122ea8ba1111ce163ec8311b9a58274">
 ]>
@@ -101,7 +101,7 @@ fi
 
 <!-- SOURCE PACKAGE -->
 <FILE Name="&source;.txz" Run="upgradepkg --install-new --reinstall">
-<URL>https://raw.githubusercontent.com/bergware/dynamix/master/archive/&name;.txz</URL>
+<URL>https://github.com/HanEightTurtle/dynamix-2020/blob/main/archive/&name;.txz</URL>
 <MD5>&MD5;</MD5>
 </FILE>
 
