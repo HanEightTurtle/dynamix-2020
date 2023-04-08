@@ -7,7 +7,7 @@
 <!ENTITY launch    "Settings/FanSettings">
 <!ENTITY pluginURL "https://github.com/HanEightTurtle/dynamix-2020/blob/main/unRAIDv6/&name;.plg">
 <!ENTITY source    "/boot/config/plugins/&name;/&name;">
-<!ENTITY MD5       "0122ea8ba1111ce163ec8311b9a58274">
+<!ENTITY MD5       "0122EA8BA1111CE163EC8311B9A58274">
 ]>
 
 <PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" min="6.1.9">
