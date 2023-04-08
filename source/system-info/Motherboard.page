@@ -1,0 +1,35 @@
+Menu="SystemProfiler:3"
+Title="Motherboard"
+---
+<?PHP
+/* Copyright 2012-2020, Bergware International.
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License version 2,
+ * as published by the Free Software Foundation.
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ */
+?>
+<?
+$plugin = 'dynamix.system.info';
+$translations = file_exists("$docroot/webGui/include/Translations.php");
+require_once "$docroot/plugins/$plugin/include/Legacy.php";
+?>
+<?if (!$translations):?>
+<?eval('?>'.parse_file("$docroot/plugins/$plugin/Motherboard.page"))?>
+<?else:?>
+<script>
+$(function() {
+  $.post("/plugins/<?=$plugin?>/include/Profiler.php",{cmd:'mb'},function(data){$('#mb').html(data);});
+});
+</script>
+<table class='share_status small'>
+<thead><td style="width:33%">_(Title)_</td><td>_(Information)_</td></thead>
+<tbody id="mb"></tbody>
+</table>
+<?if ($tabbed):?>
+<input type="button" value="_(Done)_" onclick="done()">
+<?endif;?>
+<?endif;?>
